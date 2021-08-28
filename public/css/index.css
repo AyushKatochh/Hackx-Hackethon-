@@ -625,5 +625,41 @@ body::-webkit-scrollbar-thumb:hover {
     transition: 2.5s;
 }
 
+.nav-image1{
+    
+    margin-left: 81px;
+    margin-top: 143px;
 
+}
+
+.a8 {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.a9 {
+    margin-top: 20px;
+  } 
+
+  .v2{
+    margin-top: 380px;
+  }
+
+.counter {
+    margin-right: 80px;
+}
+
+.fas {
+    color: #78DEC7;
+}
+
+.nav-bar {
+    margin-bottom: 150px;
+}
+
+
+ 
 /*custom scroll bar ends here  */
