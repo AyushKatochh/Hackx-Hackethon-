@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="icon" type="image/svg" href="/assets/ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+</head>
+
+<body>
+    <div class="top">
+        <a href="/">
+            <h1 class="abouth1">Jan Kalyan Sabha</h1>
+        </a>
+        <h3>Jan Swayam Seva is a humble website that aims to help the poor and backward classes of our country who don't have the privilege of aid as well as provide them with free healthcare kit.</h3>
+    </div>
+    <div class="bottom">
+        <h2 class="section-title">About <span>Us</span></h2>
+        <p>Jan Swayam Seva's enormous work with local researchers and distributors/retailers to ensure that the uneducated classes will be provided with the healthcare facilities as well as awareness. We also engage with non government organisations to demonstrate the importance of health and sanitation. .</p>
+        <p>Our local presence and market understanding is a combination of our global research on healthcare facilities combined with our local presence and market understanding. In this way we optimize our offerings for the local conditions while leveraging our
+            global knowledge and experiences from around the world.</p>
+    </div>
+
+
+    <div class="footer">
+        <div class="brand">
+            <h2>Jan Swayam Seva</h2>
+        </div>
+
+        <p> Copyright © 2021 Jan Swayam Seva. All rights reserved</p>
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
+        var para = document.querySelector('p');
+        var head = document.querySelector('h2');
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 200) {
+                head.style.opacity = "0.9";
+                head.style.transition = "0.3s";
+                para.style.opacity = "0.9";
+                para.style.transition = "1.2s";
+
+            } else if (scroll_position < 250) {
+                head.style.opacity = "0";
+                head.style.transition = "0.1s";
+                para.style.opacity = "0";
+                para.style.transition = "1.2s";
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
