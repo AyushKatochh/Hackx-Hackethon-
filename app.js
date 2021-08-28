@@ -17,8 +17,8 @@ require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'khetsabha@gmail.com',
-        pass: 'khetsabha2021'
+        user: 'katochayushhp@gmail.com',
+        pass: 'lovemyfamily1717@'
     }
 });
 
@@ -52,7 +52,7 @@ let pageCounter = 0;
 
 app.get("/", function(req, res) {
     pageCounter++
-    res.render("index.ejs", { currentUser: req.user });
+    res.render("index.ejs", { currentUser: req.user , pageCounter: pageCounter});
 });
 app.get("/search", function(req, res) {
     pageCounter++
@@ -152,6 +152,7 @@ app.post("/search", function(req, res) {
 
 });
 app.get("/search/:id/apply", function(req, res) {
+    pageCounter++
     Job.findById(req.params.id, function(err, job) {
         if (err)
             console.log(err);
