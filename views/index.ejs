@@ -25,7 +25,7 @@
             <div class="nav-bar">
                 <div class="brand">
                     <a href="#hero">
-                        <h1><span>Jan Swayam Seva</h1></a>
+                       <img class="nav-image1" src="assets/jss_logo_final1.png">
         </div>
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
@@ -144,6 +144,52 @@
         </div>
         </div>
     </section>
+    
+    <!-- Analytics Section -->
+    <section class="v2">
+
+        <div class="container a9">
+          <div class= "counter">
+            <i class="fas fa-address-book fa-8x"></i>
+            <div class="counter count1"><h1><%= pageCounter%></h1></div>
+            <h3>Total Page Views</h3>
+          </div>
+      
+         
+          <div class="counter">
+            <i class="fas fa-eye fa-8x"></i>
+            <div class="counter count3"><h1 id="output"></h1></div>
+            <h3>User Views</h3>
+          </div>
+        
+        </div>
+      </section>
+      <script>
+        // Check browser support
+        if (typeof Storage != "undefined") {
+          //check if the user already has visited
+          if (localStorage.getItem("userViews") === "undefined") {
+            //set the first time if it does not exist yet
+            localStorage.setItem("userViews", "1");
+          }
+      
+          //get current count
+          var userViews = localStorage.getItem("userViews");
+      
+          //increment count by 1
+          userViews++;
+      
+          //set new value to storage
+          localStorage.setItem("userViews", userViews);
+      
+          //display value
+          document.getElementById("output").innerHTML = userViews;
+        } else {
+          document.getElementById("output").innerHTML =
+            "Sorry, your browser does not support";
+        }
+      </script>
+
     <!-- End Contact Section -->
 
     <!-- Footer -->
