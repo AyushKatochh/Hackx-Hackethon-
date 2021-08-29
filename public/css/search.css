@@ -68,7 +68,7 @@ p {
 
 .cta:hover {
     color: white;
-    box-shadow: inset 0 100px 0 0 #146829;
+    box-shadow: inset 0 100px 0 0 #2D46B9;
     transition: ease-out .6s;
 }
 
@@ -128,9 +128,9 @@ input {
 
 button {
     border-radius: 25px;
-    border: 1px solid #146829;
+    border: 1px solid #2D46B9;
     background-color: transparent;
-    color: #146829;
+    color: #2D46B9;
     width: 40%;
     outline: none;
     margin-left: 30%;
@@ -142,7 +142,7 @@ button {
 }
 
 button:hover {
-    background-color: #146829;
+    background-color: #2D46B9;
     color: #f2f2f0;
     transition: 0.3s;
 }
@@ -161,12 +161,12 @@ button:hover {
 
 #header .header {
     min-height: 8vh;
-    background: #146829;
+    background: #2D46B9;
     transition: .3s ease background-color;
 }
 
 #header .header ::after {
-    background-color: #146829;
+    background-color: #2D46B9;
     opacity: 0.3;
 }
 
@@ -325,7 +325,7 @@ button:hover {
 /* Footer */
 
 #footer {
-    background: #146829;
+    background: #2D46B9;
 }
 
 #footer .footer {
@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: #146829;
+    background: #2D46B9;
     border: 1px;
     transition: 2.5s;
 }
